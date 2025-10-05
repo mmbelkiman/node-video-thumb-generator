@@ -1,0 +1,37 @@
+{
+  "name": "video-thumb-generator",
+  "version": "1.0.0",
+  "description": "CLI tool to generate video thumbnails automatically using ffmpeg",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "dev": "ts-node-dev --respawn index.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@ffprobe-installer/ffprobe": "^2.1.2",
+    "boxen": "^5.1.2",
+    "chalk": "^4.1.2",
+    "cli-progress": "^3.12.0",
+    "dotenv": "^17.2.1",
+    "enquirer": "^2.4.1",
+    "fluent-ffmpeg": "^2.1.3"
+  },
+  "devDependencies": {
+    "@types/cli-progress": "^3.11.6",
+    "@types/fluent-ffmpeg": "^2.1.27",
+    "@types/node": "^24.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "keywords": [
+    "ffmpeg",
+    "thumbnail",
+    "video",
+    "cli",
+    "nodejs"
+  ],
+  "author": "Marcelo Belkiman",
+  "license": "MIT"
+}
